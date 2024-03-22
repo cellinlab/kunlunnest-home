@@ -14,22 +14,35 @@ export default defineConfig({
     nav: [
       { text: "主页", link: "/" },
       { text: "关于", link: "/about" },
-      { text: "活动", link: "/events" },
+      { text: "活动", items: [{ text: "疯狂星期六", link: "/activity/crazysaturday" }] },
       { text: "资源库", link: "http://dayuoa.com/hub/kunlunnest" },
       { text: "更多", link: "/more" },
     ],
 
     sidebar: [
-      // {
-      //   text: "Examples",
-      //   items: [
-      //     { text: "关于昆仑巢", link: "/about" },
-      //     { text: "了解更多", link: "/more" },
-      //   ],
-      // },
+      {
+        text: "昆仑巢",
+        items: [
+          { text: "关于昆仑巢", link: "/about" },
+          { text: "了解更多", link: "/more" },
+        ],
+      },
+      {
+        text: "巢级活动",
+        items: [{ text: "疯狂星期六", link: "/activity/crazysaturday" }],
+      },
+      {
+        text: "巢级平台",
+        items: [{ text: "资源库", link: "http://dayuoa.com/hub/kunlunnest" }],
+      },
     ],
 
     socialLinks: [{ icon: "github", link: "https://github.com/cellinlab/kunlunnest-home" }],
+
+    footer: {
+      message: "域名及网站技术支持由 <a href='https://cellinlab.com'>@Cellinlab</a> 友情赞助 💖",
+      copyright: "CopyRight © 2023-present KunLunNest",
+    },
   },
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
