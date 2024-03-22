@@ -20,13 +20,13 @@ export default defineConfig({
     ],
 
     sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "关于昆仑巢", link: "/about" },
-          { text: "了解更多", link: "/more" },
-        ],
-      },
+      // {
+      //   text: "Examples",
+      //   items: [
+      //     { text: "关于昆仑巢", link: "/about" },
+      //     { text: "了解更多", link: "/more" },
+      //   ],
+      // },
     ],
 
     socialLinks: [{ icon: "github", link: "https://github.com/cellinlab/kunlunnest-home" }],
