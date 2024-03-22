@@ -7,6 +7,9 @@ export default defineConfig({
   appearance: "dark",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: "local",
+    },
     logo: {
       alt: "昆仑巢 KunLunNest",
       src: "/kunlunnest_logo.png",
@@ -49,4 +52,5 @@ export default defineConfig({
     ["script", { charset: "utf-8", id: "LA_COLLECT", src: "https://sdk.51.la/js-sdk-pro.min.js" }],
     ["script", {}, `LA.init({id:"3HsDR8QAB8p9L9AZ",ck:"3HsDR8QAB8p9L9AZ",autoTrack:true,hashMode:true})`],
   ],
+  lastUpdated: true,
 })
