@@ -31,5 +31,9 @@ export default defineConfig({
 
     socialLinks: [{ icon: "github", link: "https://github.com/cellinlab/kunlunnest-home" }],
   },
-  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  head: [
+    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ["script", { charset: "utf-8", id: "LA_COLLECT", src: "https://sdk.51.la/js-sdk-pro.min.js" }],
+    ["script", {}, `LA.init({id:"3HsDR8QAB8p9L9AZ",ck:"3HsDR8QAB8p9L9AZ",autoTrack:true,hashMode:true})`],
+  ],
 })
